@@ -10,5 +10,5 @@ npm install --save-dev @types/jest @types/supertest babel-eslint babel-preset-en
 create-react-app client
 cd client
 npm install
-npm install --save classnames history material-ui material-ui-icons prop-types react-keypress react-redux react-router-redux redux redux-saga
+npm install --save classnames history material-ui material-ui-icons prop-types react-keypress react-redux react-router-redux redux redux-saga humps
 npm install --save-dev enzyme enzyme-adapter-react-16 redux-mock-store 
