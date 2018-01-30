@@ -4,9 +4,7 @@ APP_NAME=$1
 
 # Set up the backend
 
-npm update -g express-generator
-
-express ${APP_NAME}
+npx express-generator ${APP_NAME}
 cd ${APP_NAME}
 npm install
 npm install --save-dev @types/jest @types/supertest babel-eslint babel-preset-env eslint eslint-config-react-app \
@@ -14,11 +12,11 @@ npm install --save-dev @types/jest @types/supertest babel-eslint babel-preset-en
   eslint-plugin-promise eslint-plugin-react eslint-plugin-standard jest nodemon stylelint stylelint-config-standard \
   supertest
 
+#npx json
+
 # Set up the frontend
 
-npm update -g create-react-app
-
-create-react-app client
+npx create-react-app client
 cd client
 npm install
 npm install --save classnames history material-ui material-ui-icons prop-types react-keypress react-redux \
