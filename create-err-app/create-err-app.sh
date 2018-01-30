@@ -4,6 +4,8 @@ APP_NAME=$1
 
 # Set up the backend
 
+npm update -g express-generator
+
 express ${APP_NAME}
 cd ${APP_NAME}
 npm install
@@ -13,6 +15,8 @@ npm install --save-dev @types/jest @types/supertest babel-eslint babel-preset-en
   supertest
 
 # Set up the frontend
+
+npm update -g create-react-app
 
 create-react-app client
 cd client
