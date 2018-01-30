@@ -12,7 +12,10 @@ npm install --save-dev @types/jest @types/supertest babel-eslint babel-preset-en
   eslint-plugin-promise eslint-plugin-react eslint-plugin-standard jest nodemon stylelint stylelint-config-standard \
   supertest
 
-#npx json
+npx json -I -f package.json -e 'this.babel={ "presets": [ "env" ] }'
+npx json -I -f package.json -e 'this.eslintConfig={ "extends": [ "standard", "react-app" ], "env": { "jest": true } }'
+npx json -I -f package.json -e 'this.stylelint={ "extends": "stylelint-config-standard" }'
+npx json -I -f package.json -e 'this.jest={ "modulePathIgnorePatterns": [ "<rootDir>/client/", "<rootDir>/tmp/" ] }'
 
 # Set up the frontend
 
