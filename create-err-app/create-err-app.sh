@@ -7,6 +7,7 @@ APP_NAME=$1
 npx express-generator ${APP_NAME}
 cd ${APP_NAME}
 npm install
+npm install --save config
 npm install --save-dev @types/jest @types/supertest babel-eslint babel-preset-env eslint eslint-config-react-app \
     eslint-config-standard eslint-plugin-flowtype eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-node \
     eslint-plugin-promise eslint-plugin-react eslint-plugin-standard jest nodemon stylelint stylelint-config-standard \
